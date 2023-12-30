@@ -1,0 +1,51 @@
+.color-primary{
+    color:blueviolet;
+}
+.font-50{
+    font-size: 50px;
+}   
+.select-style1{
+    height: 20px; font-size: 15px; color: red;
+}
+    /*table의 속성을 변경시키는 클래스들
+    tb-head는 테이블을 열제목을 강조시키기 위한 것 (>는 자식 선택자로써 적용될 종착지까지 path를 다 적어야함)
+    tb-body는 테이블의 내용들에 대한 것*/
+.tb-head>tr>td{
+    /*border는 경계선 속성, 즉 테이블의 박스 형태의 경계선을 만들기 위함*/
+    border: 1px solid #000;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+/*하위 선택자는 "<" 자식 선택자와는 달리 모든 하위 태그를 찾아서 적용될 종착지까지 간다.
+따라서 그냥 table 태그에만 적용 시키면된다.*/
+.tb td{
+    border: 1px solid #000;
+ }
+
+.tb-body>tr>td{
+    border: 1px solid #000;
+}
+   /* "p(태그명)"선택자(태그 선택자):해당 태그명을 가진 태그에만 적용 */
+p{
+    background: yellowgreen;
+    color: darkgreen;
+}
+/* .class(클래스명) 선택자(클래스 선택자): 해당 태그 내에서 클래스를 적용, 즉 p선택자와 중복된다 */
+.class1{ 
+    background:red ; 
+    color: darkgreen;
+}
+ /* id선택자: 특정 element에 id값을 부여할수있다. 해당 id값에서만 적용 */
+ #id1
+ {
+    background: yellowgreen;
+    color: darkgreen;
+ }
+
+
+    /*그외 선택자*/
+   /* "*"선택자(전체 선택자): 모든 element에 적용 */
+
+
+   /* ""선택자: */
